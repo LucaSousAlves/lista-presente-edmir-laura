@@ -49,7 +49,7 @@ export default function Home() {
           recipientName: name.trim(),
         });
         console.log('Document written with ID: ', docRef.id);
-        setMessage('Enviado com sucesso');
+        
         setName('');
         setSelectedItem('');
         setSubmitted(true);
