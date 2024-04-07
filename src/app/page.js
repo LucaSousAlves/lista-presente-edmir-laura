@@ -154,7 +154,7 @@ export default function Home() {
             <div className="btn-fechar">
             <button style={{ color: '#333333', textAlign: 'center' }} className="close-btn" onClick={() => setShowPopup(false)}>X</button>
             </div>
-            <h2 style={{ color: 'green', textAlign: 'center' }}>Item selecionado com sucesso!</h2> {/* Centralizando o texto */}
+            <h2 style={{ color: 'green', textAlign: 'center', marginBottom:'1rem' }}>Item selecionado com sucesso!</h2> {/* Centralizando o texto */}
             <p style={{ color: '#333333', textAlign: 'center' }}>Agradecemos imensamente o carinho e a gentileza de seu presente. Sua generosidade é verdadeiramente apreciada.</p>
             <p style={{ color: '#333333', textAlign: 'center' }}>Atenciosamente,</p>
             <p style={{ color: '#333333', textAlign: 'center' }}>Lucas e Jani</p>
