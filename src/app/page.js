@@ -10,7 +10,6 @@ export default function Home() {
   const [name, setName] = useState('');
   const [submitted, setSubmitted] = useState(false);
   const [itemExists, setItemExists] = useState(false);
-  const [message, setMessage] = useState('');
   const [showPopup, setShowPopup] = useState(false); 
 
 
@@ -138,9 +137,7 @@ export default function Home() {
                     >
                       Enviar
                     </button>
-                    {submitted && <p className='text-green-500'>Envio bem-sucedido!</p>}
-                    {message && <p className='text-green-500'>{message}</p>}
-
+                 
                   </>
                 )}
               </div>
