@@ -103,7 +103,7 @@ export default function Home() {
               <option value='Jogo de toalhas de banho'>Jogo de toalhas de banho</option>
               <option value='Lençol de cama Queen'>Lençol de cama Queen</option>
               <option value='Liquidificador'>Liquidificador</option>
-              <option value='Liquidificador'>Mixer</option>
+              <option value='Mixer'>Mixer</option>
               <option value='Panela de arroz'>Panela de arroz</option>
               <option value='Panela de pressão'>Panela de pressão</option>
               <option value='Porta Frios'>Porta Frios</option>
