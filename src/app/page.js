@@ -10,7 +10,7 @@ export default function Home() {
   const [name, setName] = useState('');
   const [submitted, setSubmitted] = useState(false);
   const [itemExists, setItemExists] = useState(false);
-  const [showPopup, setShowPopup] = useState(false); 
+  const [showPopup, setShowPopup] = useState(false);
 
 
   useEffect(() => {
@@ -48,7 +48,7 @@ export default function Home() {
           recipientName: name.trim(),
         });
         console.log('Document written with ID: ', docRef.id);
-        
+
         setName('');
         setSelectedItem('');
         setSubmitted(true);
@@ -78,44 +78,61 @@ export default function Home() {
               style={{ width: '300px', borderRadius: '5px' }}
             >
               <option value=''>Selecione um item</option>
-              <option value='Aparelho De Jantar'>Aparelho De Jantar</option>
-              <option value='Aparelho De Sobremesa'>Aparelho de Sobremesa</option>
-              <option value='Air fryer - Josy e Hugo'>Air fryer</option>
-              <option value='Asspirador de pó'>Aspirador de pó</option>
-              <option value='Cestos Organizadores'>Cestos Organizadores</option>
-              <option value='Chaleira Elétrica'>Chaleira Elétrica</option>
-              <option value='Edredom'>Edredom</option>
-              <option value='Escorredor de Louça'>Escorredor de Louça</option>
-              <option value='Faqueiro'>Faqueiro</option>
+              <option value='Abridor de lata'>Abridor de lata</option>
+              <option value='Aparelho de jantar'>Aparelho de jantar</option>
+              <option value='Aspirador de pó'>Aspirador de pó</option>
+              <option value='Assadeiras de vidro'>Assadeiras de vidro</option>
+              <option value='Cabides pretos de camurça'>Cabides pretos de camurça</option>
+              <option value='Caixas organizadoras'>Caixas organizadoras</option>
+              <option value='Centifugador de salada'>Centifugador de salada</option>
+              <option value='Cesto organizador de geladeira'>Cesto organizador de geladeira</option>
+              <option value='Cesto para roupa suja'>Cesto para roupa suja</option>
+              <option value='Colher de Servir'>Colher de Servir</option>
+              <option value='Conjunto de travesseiros'>Conjunto de travesseiros</option>
+              <option value='Conjunto de vasilhas'>Conjunto de vasilhas</option>
+              <option value='Conjunto de Xícaras'>Conjunto de Xícaras</option>
+              <option value='Conjunto para sushi'>Conjunto para sushi</option>
+              <option value='Conjunto ralador e fatiador'>Conjunto ralador e fatiador</option>
+              <option value='Cuscuzeira'>Cuscuzeira</option>
+              <option value='Descanso para talheres'>Descanso para talheres</option>
+              <option value='Edredom de Casal'>Edredom de Casal</option>
+              <option value='Escorredor de Louças'>Escorredor de Louças</option>
+              <option value='Escorredor de macarrão'>Escorredor de macarrão</option>
+              <option value='Espremedor de Frutas'>Espremedor de Frutas</option>
               <option value='Ferro de passar'>Ferro de passar</option>
-              <option value='Frigideira'>Frigideira</option>
-              <option value='Formas/Assadeiras'>Formas/Assadeiras</option>
-              <option value='Jarra de suco'>Jarra de suco</option>
-              <option value='Jogo De Bowl'>Jogo de Bowl</option>
-              <option value='Jogo De Cama Queen'>Jogo de cama Queen</option>
-              <option value='Jogo De Copos'>Jogo de Copos</option>
-              <option value='Jogo De Panelas'>Jogo de Panelas</option>
-              <option value='Jogo De Pratos'>Jogo de Pratos</option>
-              <option value='Jogo De Talheres'>Jogo de Talheres</option>
-              <option value='Jogo De Taças'>Jogo de Taças</option>
-              <option value='Jogo De Travessas'>Jogo de Travessas</option>
-              <option value='Jogo de travesseiros'>Jogo de travesseiros</option>
-              <option value='Jogo de toalhas de banho'>Jogo de toalhas de banho</option>
-              <option value='Lençol de cama Queen'>Lençol de cama Queen</option>
+              <option value='Formas assadeiras'>Formas assadeiras</option>
+              <option value='Frigideira Wok'>Frigideira Wok</option>
+              <option value='Fruteira'>Fruteira</option>
+              <option value='Garrafa de café'>Garrafa de café</option>
+              <option value='Jogo americano'>Jogo americano</option>
+              <option value='Jogo de cama de Casal'>Jogo de cama de Casal</option>
+              <option value='Jogo de Copos'>Jogo de Copos</option>
+              <option value='Jogo de cumbucas'>Jogo de cumbucas</option>
+              <option value='Jogo de facas'>Jogo de facas</option>
+              <option value='Jogo de Frigideiras'>Jogo de Frigideiras</option>
+              <option value='Jogo de Panelas'>Jogo de Panelas</option>
+              <option value='Jogo de peneira'>Jogo de peneira</option>
+              <option value='Jogo de sobremesa'>Jogo de sobremesa</option>
+              <option value='Jogo de taças'>Jogo de taças</option>
+              <option value='Jogo de talher'>Jogo de talher</option>
+              <option value='Jogo de tapetes'>Jogo de tapetes</option>
+              <option value='Jogo de toalha de banho'>Jogo de toalha de banho</option>
+              <option value='Kit de utensílios de churrasco'>Kit de utensílios de churrasco</option>
+              <option value='Kit pia banheiro'>Kit pia banheiro</option>
+              <option value='Kit pia cozinha'>Kit pia cozinha</option>
+              <option value='Kit panos de prato'>Kit panos de prato</option>
               <option value='Liquidificador'>Liquidificador</option>
               <option value='Mixer'>Mixer</option>
-              <option value='Panela de arroz'>Panela de arroz</option>
-              <option value='Panela de pressão'>Panela de pressão</option>
-              <option value='Porta Frios'>Porta Frios</option>
-              <option value='Porta Temperos'>Porta Temperos</option>
-              <option value='Potes De Uso Diário'>Potes de Uso Diário</option>
-              <option value='Potes Porta Mantimentos'>Potes Porta Mantimentos</option>
-              <option value='Purificador de água'>Purificador de água</option>
-              <option value='Ralador'>Ralador</option>
+              <option value='Mop giratório'>Mop giratório</option>
+              <option value='Mop Spray'>Mop Spray</option>
+              <option value='Porta tempeiros inox'>Porta tempeiros inox</option>
+              <option value='Potes herméticos'>Potes herméticos</option>
               <option value='Sanduicheira'>Sanduicheira</option>
-              <option value='Tábua De Corte'>Tábua de Corte</option>
-              <option value='Travessa De Vidro'>Travessa de Vidro</option>
-              <option value='Utensílios De Silicone'>Utensílios de Silicone</option>
+              <option value='Tábua de carne'>Tábua de carne</option>
+              <option value='Tábua de passar roupa'>Tábua de passar roupa</option>
+              <option value='Toalha de mesa (120cm*80cm)'>Toalha de mesa (120cm*80cm)</option>
+              <option value='Varal de chão'>Varal de chão</option>
+              <option value='Ventilador'>Ventilador</option>
             </select>
             {selectedItem && (
               <div className='col-span-3'>
@@ -138,7 +155,7 @@ export default function Home() {
                     >
                       Enviar
                     </button>
-                 
+
                   </>
                 )}
               </div>
@@ -150,12 +167,12 @@ export default function Home() {
         <div className="popup-container">
           <div className="popup">
             <div className="btn-fechar">
-            <button style={{ color: '#333333', textAlign: 'center' }} className="close-btn" onClick={() => setShowPopup(false)}>X</button>
+              <button style={{ color: '#333333', textAlign: 'center' }} className="close-btn" onClick={() => setShowPopup(false)}>X</button>
             </div>
-            <h2 style={{ color: 'green', textAlign: 'center', marginBottom:'1rem' }}>Item selecionado com sucesso!</h2> {/* Centralizando o texto */}
+            <h2 style={{ color: 'green', textAlign: 'center', marginBottom: '1rem' }}>Item selecionado com sucesso!</h2> {/* Centralizando o texto */}
             <p style={{ color: '#333333', textAlign: 'center' }}>Agradecemos imensamente o carinho e a gentileza de seu presente. Sua generosidade é verdadeiramente apreciada.</p>
             <p style={{ color: '#333333', textAlign: 'center' }}>Atenciosamente,</p>
-            <p style={{ color: '#333333', textAlign: 'center' }}>Lucas e Jani</p>
+            <p style={{ color: '#333333', textAlign: 'center' }}>Edmir e Laura</p>
           </div>
         </div>
       )}
